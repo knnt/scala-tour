@@ -167,7 +167,7 @@ object BoringBlaher extends BoringShouter {
 dla okalającego scope'u. To znaczy, że jeśli zadeklarujemy `object` w jakimś pakiecie,
 de facto dostaniemy singleton. Jest to jednocześnie typu oraz jedynej dostępnej wartości tego typu.
 W Scali nie ma metod statycznych - obiekty wypełniają tę dziurę dużo lepiej,
-np. bo mogą implementować różne traity.q
+np. bo mogą implementować różne traity.
 
 ## Companion objects
 W pliku, w którym definiujemy klasę/trait `T`, można też zadefiniować obiekt `T`.
@@ -274,3 +274,15 @@ val p2 = p.aPotem(t => t*2+3)
 Semantyka jest taka: jeśli jakieś parametry są oznaczone jako `implicit`, to kompilator
 będzie szukał w bieżącym scope'ie wartości, których typ pasuje i też są `implicit`.
 Jeśli najbardziej pasująca typem wartość będzie dokładnie jedna, to zgadnie i wstawi.
+
+# Co dalej?
+* rich interfaces, self-typed traits
+* implicit classes, value types
+* go reactive:
+  * asynchronous programming with Futures
+  * streams
+  * actors
+* parsing (e.g. JSON) with combinators
+* Specification checking with specs2
+* Java libraries out-of-the-box
+* Heavy functional programming: scalaz
